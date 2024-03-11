@@ -25,7 +25,14 @@
     }
     .hero-section {
       text-align: center; /* Center text within the section */
-      background: #0b9eb5;
+      background: #78bfca;
+      border-radius: 10px;
+      margin: 40px;
+      margin-left: 60px;
+      margin-right: 60px;
+      padding: 30px;
+      justify-content: center;
+
     }
     .second-con{
       border-radius: 10px;
@@ -35,33 +42,124 @@
       margin-right: 60px;
       padding: 20px;
       text-align: center;
-      display: flex;
+      /* display: flex; */
       justify-content: center;
       align-items: center; 
-      min-height: 50vh;
-      min-width: 50vh;
     }
-    .card{
-      margin: 10px;
+    .card {
+      width: 18rem;
+      margin: 20px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      /* Add some default shadow */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .card-con{
+      display: flex;
+      justify-content: center;
+    }
+    
+
+    .card-img-top {
+      width: 100%;
+      height: 200px; /* Adjust image height as needed */
+      object-fit: cover; /* Scales image to fit within container */
+    }
+    h1{
+      font-weight: bold;
+    }
+    .phero{
+      font-style: oblique;
+    }
+    .psecond{
+      font-weight: bold;
+      font-style: italic;
+    }
+    .third-con{
+      border-radius: 10px;
+      background-color: rgb(227, 206, 206);
+      margin: 40px;
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-bottom: 80px;
+      padding: 40px;
+      text-align: center;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;  
+    }
+    .roundcards{
+      border-radius: 50%;
+      overflow: hidden;  /* Important for this method */
+      width: 250px;
+      height: 250px;
+      margin: 30px;
+      margin-bottom: 10px;
+    }
+    .roundcard-img-top{
+      width: 100%;  /* Ensures image fills the card */
+      height: 100%;  /* Ensures image fills the card */
+      object-fit: cover;
+    }
+    h2{
+      font-weight: bold;
+    }
+    .feedback{
+      display: flex;
+      justify-content: center;
+    }
+    .pfeed{
+      padding: 10px;
+      width: 250px;
+      margin: 30px;
+      margin-top: 10px;
+      font-weight: 650;
     }
   </style>
 <div class="hero-section">
   <h1>Indulge in Delicious Flavors</h1>
   <div id="carouselExampleIndicators" class="carousel slide">
     </div>
-  <p>Explore our wide variety of dishes, prepared with fresh ingredients and authentic recipes.</p>
+  <p class="phero">Explore our wide variety of dishes, prepared with fresh ingredients and authentic recipes.</p>
   <a href="#" class="btn btn-primary">Order Now</a>
 </div>
+
 <div class="second-con">
-  <h1>Hello!</h1>
-  <div class="card" style="width: 22rem;">
-    <img src="{% static 'images/upma.jpg' %}" class="card-img-top" alt="KLU"> 
-  </div>
-  <div class="card" style="width: 22rem;">
-    <img src="{% static 'images/upma.jpg' %}" class="card-img-top" alt="KLU">
+  <div class="card-con">
+    <div class="card" style="width: 22rem;">
+      <img src="{% static 'images/chef1.jpg' %}" class="card-img-top" alt="KLU"> 
+    </div>
+    <div class="card" style="width: 22rem;">
+      <img src="{% static 'images/chef2.jpg' %}" class="card-img-top" alt="KLU">
     </div>
   </div>
+    <p class="psecond">Explore the kitchen with various chefs in the town</p>
 </div>
+
+<div class="third-con">
+  <h2>Top reviews from our customers:</h2>
+  <div class="card-con">
+    <div class="roundcards">
+      <img src="{% static 'images/person1.jpg' %}" class="roundcard-img-top" alt="KLU">  
+    </div>
+    <div class="roundcards">
+      <img src="{% static 'images/person2.jpg' %}" class="roundcard-img-top" alt="KLU">  
+    </div>
+    <div class="roundcards">
+      <img src="{% static 'images/person3.jpg' %}" class="roundcard-img-top" alt="KLU">  
+    </div>
+  </div>
+  <div class="feedback">
+    <p class="pfeed">Great selection! Discover new places, support local. User-friendly app, helpful tracking. Minor occasional time delays.</p>
+    <p class="pfeed">Love the deals! Discounts for favorites, try new places. Excellent customer service.</p>
+    <p class="pfeed">This app saves time! Order from all my favorites in a few clicks. Fast delivery, fresh food. Highly recommend!</p>
+  </div>
+  
+
+</div>
+
+
 
 
 {% endblock %}
