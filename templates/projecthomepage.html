@@ -27,6 +27,23 @@
       text-align: center; /* Center text within the section */
       background: #0b9eb5;
     }
+    .second-con{
+      border-radius: 10px;
+      background-color: rgb(225, 227, 206);
+      margin: 40px;
+      margin-left: 60px;
+      margin-right: 60px;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      min-height: 50vh;
+      min-width: 50vh;
+    }
+    .card{
+      margin: 10px;
+    }
   </style>
 <div class="hero-section">
   <h1>Indulge in Delicious Flavors</h1>
@@ -35,6 +52,18 @@
   <p>Explore our wide variety of dishes, prepared with fresh ingredients and authentic recipes.</p>
   <a href="#" class="btn btn-primary">Order Now</a>
 </div>
+<div class="second-con">
+  <h1>Hello!</h1>
+  <div class="card" style="width: 22rem;">
+    <img src="{% static 'images/upma.jpg' %}" class="card-img-top" alt="KLU"> 
+  </div>
+  <div class="card" style="width: 22rem;">
+    <img src="{% static 'images/upma.jpg' %}" class="card-img-top" alt="KLU">
+    </div>
+  </div>
+</div>
+
+
 {% endblock %}
 </body>
 </html>

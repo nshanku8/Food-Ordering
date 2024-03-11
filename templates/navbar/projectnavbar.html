@@ -67,14 +67,14 @@
           </li>
       </ul>-->
 <ul class="navbar-nav ms-auto">
-    <li>
-        {% if user.is_authenticated %}
-        <li class="nav-item">
-    <span class="nav-link">Welcome, {{user.username}}</span>
-    </li>
+  <li>
+    {% if user.is_authenticated %}
     <li class="nav-item">
-        <a class="btn btn-danger" style="margin-right: 5px; margin-left: 5px;" href="{% url 'logout' %}">logout</a>
+      <span class="nav-link"><button type="button" class="btn btn-light">Welcome, {{ user.username }}</button></span>
     </li>
+      <li class="nav-item">
+        <a href="{% url 'logout' %}"><span class="nav-link"><button type="button" class="btn btn-danger">Logout</button></span></a>
+      </li>
     {% else %}
      <li class="nav-item" >
         <a class="btn btn-primary" style="margin-right: 5px; margin-left: 5px;" href="{% url 'signup' %}">Register</a>
