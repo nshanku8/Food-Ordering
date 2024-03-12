@@ -13,6 +13,10 @@ def southveg(request):
     return render(request,'customermodule/southveg.html')
 def deserts(request):
     return render(request,'customermodule/deserts.html')
+def feedback(request):
+    return render(request,'navbar/feedback.html')
+def aboutus(request):
+    return render(request,'navbar/aboutus.html')
 def review_list(request):
     if request.method == 'GET':
         reviews = TouristReview.objects.all()

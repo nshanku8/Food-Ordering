@@ -14,4 +14,6 @@ urlpatterns = [
     path('deserts/',views.deserts,name='deserts'),
     path('review_list/',views.review_list,name='review_list'),
     path('add_review/',views.add_review,name='add_review'),
+    path('feedback/',views.feedback,name='feedback'),
+    path('aboutus/',views.aboutus,name='aboutus'),
 ]
