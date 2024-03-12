@@ -8,7 +8,150 @@
 </head>
 <body>
     {% block body %}
-    <h1>This page is for "About Us"</h1>
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+        }
+        h1{
+            justify-content: center;
+            display: flex;
+        }
+
+        .third-con{
+        border-radius: 10px;
+        background-color: rgb(215, 232, 197);
+        margin: 40px;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 80px;
+        padding: 40px;
+        text-align: center;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;  
+        box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
+        }
+        .card-con{
+        /* display: flex; */
+        justify-content: center;
+        }
+        
+        h2{
+        font-weight: bold;
+        }
+        /* .feedback{
+        display: flex;
+        justify-content: center;
+        } */
+        .pdes{
+        padding: 15px;
+        width: 250px;
+        margin: 30px;
+        margin-top: 10px;
+        font-weight: 650;
+        justify-content: center;
+        }
+        .hexagonal-card {
+        width: 200px; /* Adjust width as needed */
+        height: 200px; /* Adjust height as needed */
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        background-color: #ffffff; /* Set background color */
+        width: 300px;
+        height: 300px;
+        }
+
+        .hexagonal-card img {
+        width: 100%; /* Adjust image width */
+        height: 100%; /* Maintain aspect ratio */
+        object-fit: cover;
+        }
+        .team1{
+            display:flex;
+            justify-content: center;
+            margin: 40px;
+        }
+
+    </style>
+    <h1>"About Us"</h1>
+    <h1>Meet the team</h1>
+    <div class="third-con">
+        <h2>Our Team Members</h2>
+        <div class="card-con">
+        <div class="team1">
+            <div class="hexagonal-card">
+                <img src="" class="hexagonal-card img" alt="KLU">  
+            </div>
+            <p class="pdes">Bhargav Sai - Team Lead <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, consectetur? Vero ad quidem adipisci delectus similique maiores aperiam. Facilis animi, veniam et pariatur alias iure voluptates repudiandae optio reiciendis dolorem?</p>
+        </div>
+        <div class="team1">
+            <p class="pdes">Hema - Team Member <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quos aut excepturi tenetur beatae nulla, molestiae aliquam in quis incidunt. Libero cum esse iure eligendi ipsa neque in dicta ratione.</p>
+          <div class="hexagonal-card">
+            <img src="" class="hexagonal-card img" alt="KLU">  
+          </div>
+        </div>
+        <div class="team1">
+            <div class="hexagonal-card">
+                <img src="" class="hexagonal-card img" alt="KLU">  
+              </div>
+              <p class="pdes">Shashank - Team Member <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus animi exercitationem distinctio amet deserunt temporibus facilis placeat vel nihil magnam. Qui sint vel dolores? Dignissimos a impedit voluptates aperiam voluptate.</p>
+        </div>
+            
+
+
+
+
+
+
+
+          
+        </div>
+        <!-- <div class="feedback">
+        </div> -->
+        
+      
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1>Our community(numbers)</h1>
+    <h1>Our offices</h1>
+    <h1>Subscribe to our newsletter</h1>
     
     {% endblock %}
 </body>
