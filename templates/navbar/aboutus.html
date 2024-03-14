@@ -36,44 +36,123 @@
         box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
         }
         .card-con{
-        /* display: flex; */
-        justify-content: center;
+            /* display: flex; */
+            justify-content: center;
         }
         
         h2{
-        font-weight: bold;
+            font-weight: bold;
         }
         /* .feedback{
-        display: flex;
-        justify-content: center;
+            display: flex;
+            justify-content: center;
         } */
         .pdes{
-        padding: 15px;
-        width: 250px;
-        margin: 30px;
-        margin-top: 10px;
-        font-weight: 650;
-        justify-content: center;
+            padding: 15px;
+            width: 250px;
+            margin: 30px;
+            margin-top: 10px;
+            font-weight: 650;
+            justify-content: center;
         }
         .hexagonal-card {
-        width: 200px; /* Adjust width as needed */
-        height: 200px; /* Adjust height as needed */
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        background-color: #ffffff; /* Set background color */
-        width: 300px;
-        height: 300px;
+            width: 200px; /* Adjust width as needed */
+            height: 200px; /* Adjust height as needed */
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            background-color: #ffffff; /* Set background color */
+            width: 300px;
+            height: 300px;
         }
-
+        
         .hexagonal-card img {
-        width: 100%; /* Adjust image width */
-        height: 100%; /* Maintain aspect ratio */
-        object-fit: cover;
+            width: 100%; /* Adjust image width */
+            height: 100%; /* Maintain aspect ratio */
+            object-fit: cover;
         }
         .team1{
             display:flex;
             justify-content: center;
             margin: 40px;
         }
+        .com-con {
+        border-radius: 10px;
+        background-color: rgb(245, 104, 104);
+        padding: 40px;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Set minimum height to viewport height */
+        margin-left: 150px;
+        margin-right: 150px;
+        }
+
+        .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        }
+
+        .com-row1,
+        .com-row2 {
+        display: flex;
+        background-color: #ffffff;
+        justify-content: space-between;
+        width: 900px;
+        height: 300px;
+        border-radius: 20px;
+        }
+
+        .r1b1,
+        .r1b2,
+        .r1b3,
+        .r2b1,
+        .r2b2,
+        .r2b3 {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        /* margin: 5px; */
+        text-align: center;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        /* line-height: 100px; */
+        }
+        .r1b1{
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            align-items: center;
+            justify-content: center;
+        }
+        .r1b2{
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .r1b3{
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+        }
+        .r2b1{
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .r2b2{
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .r2b3{
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+        }
+
+
+
 
     </style>
     <h1>"About Us"</h1>
@@ -100,20 +179,52 @@
               <p class="pdes">Shashank - Team Member <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus animi exercitationem distinctio amet deserunt temporibus facilis placeat vel nihil magnam. Qui sint vel dolores? Dignissimos a impedit voluptates aperiam voluptate.</p>
         </div>
             
-
-
-
-
-
-
-
           
         </div>
-        <!-- <div class="feedback">
-        </div> -->
         
       
+    </div>
+
+
+    <div class="com-con">
+        <!-- <h1>This is for community console</h1> -->
+        <div class="content-wrapper">
+          <div class="com-row1">
+            <div class="r1b1">
+                <h3>200+</h3>
+                <p>employees in</p>
+                <h5>4</h5>
+                <p>offices</p>
+            </div>
+            <div class="r1b2">
+              <p>box2</p>
+            </div>
+            <div class="r1b3">
+              <p>box3</p>
+            </div>
+          </div>
+          <div class="com-row2">
+            <div class="r2b1">
+              <p>box1</p>
+            </div>
+            <div class="r2b2">
+              <p>box2</p>
+            </div>
+            <div class="r2b3">
+              <p>box3</p>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      
+      
+
+
+
+    
+
+    
 
 
 
