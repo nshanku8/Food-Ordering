@@ -2,21 +2,57 @@
 {% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
 </head>
 <body>
-    {% block body %}
-    <h1>This is Add To Cart page</h1>
+  {% block body %}
+  <style>
+    .cart-container {
+      display: flex; /* Make the container a flexbox */
+      flex-wrap: wrap; /* Allow items to wrap to multiple lines */
+      justify-content: space-between; /* Distribute items evenly */
+      margin: 0 10px;
+    }
 
+    .cart-item {
+      width: 25%; /* Define width for each item */
+      margin: 10px; /* Add margin for spacing */
+      border: 1px solid #ddd; /* Add a border for styling */
+      padding: 10px; /* Add padding for content */
+    }
 
+    .cart-item img {
+      width: 100%; /* Set image width to fill the item */
+      height: 150px; /* Adjust image height as needed */
+      object-fit: cover; /* Scales image to fit within container */
+    }
 
+    .cart-item-details {
+      text-align: center; /* Center text within item */
+    }
+  </style>
 
+  <h1>Your Shopping Cart</h1>
 
+  {% if cart_items %}
+    <div class="cart-container">
+      {% for item in cart_items %}
+        <div class="cart-item">
+          <img src="{% static 'images/' %}{{ item.image }}" alt="{{ item.name }}">
+          <div class="cart-item-details">
+            <p>{{ item.name }}</p>
+            <p>Rs. {{ item.price }}</p>
+            <a href="{% url 'removefromcart' item.id %}" class="btn btn-danger">Remove</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>Your cart is currently empty.</p>
+  {% endif %}
 
-
-
-    {% endblock %}
+  {% endblock %}
 </body>
 </html>

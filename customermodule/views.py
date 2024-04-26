@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from empmodule.models import Jobdetails
 
+
 # Create your views here.
 def viewfood(request):
     return render(request,'customermodule/viewfood.html')
