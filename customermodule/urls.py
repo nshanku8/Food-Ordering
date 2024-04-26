@@ -16,4 +16,5 @@ urlpatterns = [
     path('add_review/',views.add_review,name='add_review'),
     path('feedback/',views.feedback,name='feedback'),
     path('aboutus/',views.aboutus,name='aboutus'),
+    path('addtocart/',views.addtocart,name='addtocart'),
 ]

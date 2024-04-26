@@ -11,12 +11,15 @@ def viewfood1(request):
     return render(request,'customermodule/viewfood.html',{'job_details_list':viewfood1})
 def southveg(request):
     return render(request,'customermodule/southveg.html')
+def addtocart(request):
+    return render(request,'customermodule/addtocart.html')
 def deserts(request):
     return render(request,'customermodule/deserts.html')
 def feedback(request):
     return render(request,'navbar/feedback.html')
 def aboutus(request):
     return render(request,'navbar/aboutus.html')
+
 def review_list(request):
     if request.method == 'GET':
         reviews = TouristReview.objects.all()
