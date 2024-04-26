@@ -14,6 +14,8 @@ def southveg(request):
     return render(request,'customermodule/southveg.html')
 def addtocart(request):
     return render(request,'customermodule/addtocart.html')
+def paynow(request):
+    return render(request,'customermodule/paynow.html')
 def deserts(request):
     return render(request,'customermodule/deserts.html')
 def feedback(request):

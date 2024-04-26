@@ -17,4 +17,5 @@ urlpatterns = [
     path('feedback/',views.feedback,name='feedback'),
     path('aboutus/',views.aboutus,name='aboutus'),
     path('addtocart/',views.addtocart,name='addtocart'),
+    path('paynow/',views.paynow,name='paynow'),
 ]
